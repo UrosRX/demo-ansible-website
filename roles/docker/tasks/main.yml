@@ -2,7 +2,7 @@
 - name: Run distro-specific tasks (CentOS)
   block:
     - name: Add the Docker yum repository
-      yum_repository:
+      ansible.builtin.yum_repository:
         name: docker-stable
         description: Docker Stable
         baseurl: "https://download.docker.com/linux/centos/$releasever/$basearch/stable"

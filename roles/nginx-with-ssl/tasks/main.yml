@@ -1,6 +1,6 @@
 ---
 - name: Install nginx and prerequisites
-  package:
+  ansible.builtin.package:
     name:
       - nginx
       # prerequisite for installing openssl_* module prerequisites
